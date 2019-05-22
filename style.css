@@ -6,73 +6,15 @@
   box-sizing: border-box;
 }
 
-/*///////////header small//////////*/
-
-/* header{
-  height:5%
-}
-#header-logo-div{
-  margin-bottom:0 ;
-  color:white; 
-  background-color:#EB3E37 ;
-  height:10%;
-}
-#newsweek-logo{
-  fill:aliceblue ;
-  width: 40%;
-  margin: 4% auto 4% 0;
-}
-
-#sign-in-header{
-  margin: 1% auto 1% 0;
-}
-#sign-in-header a{
-  margin-top:0%;
-  display:inline-block;
-  height: 5%;
-}
-
-.btn-light{
-  border-radius:0;
-  color:#EB3E37;
-}
-
-#header-date{
-  display:none;
-}
-#collapse-btn{
-  display:none;
-}
- */
-
-
-/* @media screen and (max-width:1024px){
-  .btn-light{
-    display:inline-block;
-    border-radius:0;
-    color:#EB3E37;
-    height:5%;
-    font-size:0.5em;
-  }
-
-  #sign-in-header a{
-    margin-top:0%;
-    display:inline-block;
-    height: 1%;
-    font-size:0.5em;
-  }
-  
-}*/
-
-
-
-
-
-
-
-
- 
   /* ///////////header////////// */
+header{
+    
+    position:relative;
+    top:0;
+    width:100%;
+    height:30%;
+    z-index: 1;
+  }
   #header-logo-div{
     margin-bottom:0 ;
     color:rgb(255, 255, 255); 
@@ -147,6 +89,7 @@
     }
   
   } 
+
  
 @media screen and (min-width:768px){
   
@@ -173,16 +116,9 @@
     font-size: 0.8em;
   }
   
-    
-  
-  
- 
-  
-
 
 }
 
-  
 
 @media screen and (min-width:992px){
 
@@ -223,12 +159,62 @@
   }
   
 
+}
+/*/////// NAVBAR ///////////////////*/
+#navbar-div{
+  position: relative;
+  
+}
+.nav-item{
+  padding: 0 0.5em;
+  border-right:1px solid rgb(212, 207, 207);
+}
+.nav-item.last{
+  
+  border-right:none;
+}
 
 
+.nav-link{
+  color:black;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color:#EB3E37;
+}
+
+
+#navbar-form{
+    margin-right:10%;
+}
+
+
+#navbar-search{
+  border: 1px solid #CED4DA;
+  
+}
+.fas.fa-search{
+  font-size: 100%;
+}
+
+@media screen and (min-width:992px){
+  #navbar-div::after{
+    content:'';
+    width : 10%;
+    display:block;
+    border-top: 15px solid #EB3E37;
+    border-left: 10px solid white;
+    
+    position:absolute;
+    top:0;
+    right:0;
+    }
 
 }
   
-
+/*//////////////MAIN/////////////////*/
+main{
+}
 
 
 
