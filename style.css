@@ -236,7 +236,11 @@ a:hover{
 
   
 /*//////////////MAIN/////////////////*/
-
+.sticky{
+  position:sticky;
+  top: -180%;
+ 
+}
 .grey-title{
   font:bold 16px/16px "Roboto Condensed",sans-serif;
   color:rgba(3,3,3,.4);
